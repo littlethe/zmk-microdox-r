@@ -34,7 +34,7 @@
                         bindings = <
    &kp SLASH &kp STAR  &kp MINUS  &kp PLUS &kp GRAVE    &kp GRAVE &kp PLUS &kp MINUS &kp STAR &kp SLASH
    &kp RBKT  &kp RPAR  &kp SQT    &kp LPAR &kp LBKT     &kp LBKT  &kp LPAR &kp SQT   &kp RPAR &kp RBKT
-   &trans    &trans    &trans     &kp BSLH &kp trans    &trans    &kp BSLH &trans    &trans   &trans
+   &trans    &trans    &trans     &kp BSLH &trans       &trans    &kp BSLH &trans    &trans   &trans
                        &trans     &mo 3    &trans       &trans    &mo 3    &trans
                         >;
                 };
@@ -81,5 +81,5 @@
                              &trans       &trans       &trans         &trans  &trans  &trans
                         >;
                 };
-};
+        };
 };
