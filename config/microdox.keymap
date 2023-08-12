@@ -25,7 +25,7 @@
           &kp LGUI &mo 1 &kp LSHFT &kp SPACE &mo 2 &kp RALT
                         >;
                 };
-                nav_layer {
+                num_layer {
 // -----------------------------------------------------------------------------------------
 // |BTCLR|     | ESC |  ~   |     |   | TAB | HOME |  UP  | END | DEL  |
 // | BT1 | GUI | ALT | CTRL | NUM |   |  /  | LEFT | DOWN | RGT | BKSP |
@@ -39,7 +39,7 @@
                         >;
                 };
 
-                sym_layer {
+                nav_layer {
 // -----------------------------------------------------------------------------------------
 // |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
 // |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |
@@ -55,7 +55,7 @@
 
 // This layer is unreachable until "tri layer state" is sorted out.
 // Leaving it here for completeness.
-                num_layer {
+                sys_layer {
 // -----------------------------------------------------------------------------------------
 // |     |     |     |     |     |   |  A  |  7  |  8  |  9  |  D  |
 // |     |     |     |     |     |   |  B  |  4  |  5  |  6  |  E  |
@@ -68,5 +68,21 @@
                  &trans &trans &trans    &kp N0 &kp DOT &trans
                         >;
                 };
-        };
+                bt_layer {
+// -----------------------------------------------------------------------------------------
+// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
+// |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |
+// |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |
+//             | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &bt BT_CLR   &bt BT_SEL 4 &bt BT_SEL 5 &bt BT_SEL 6 &bt BT_PRV     &trans  &trans  &trans  &trans  &trans
+   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_NXT     &trans  &trans  &trans  &trans  &trans
+   &trans       &trans       &trans       &trans       &trans         &trans  &trans  &trans  &trans  &trans
+                             &trans       &trans       &trans         &trans  &trans  &trans
+                        >;
+                };
+
+};
+
+
 };
