@@ -62,10 +62,10 @@
 // |     |     |     |     |     |   |  C  |  1  |  2  |  3  |  F  |
 //             |     |     |     |   |  0  |  .  |     |
                         bindings = <
-   &kp LNCK &kp PAUSE_BREAK &kp SLCK &kp PSCRN &kp CAPS    &kp CAPS &kp PSCRN &kp SLCK &kp PAUSE_BREAK &kp LNLCK
-   &trans   &trans          &trans   &trans    &trans      &trans   &trans    &trans   &trans          &trans
-   &trans   &trans          &trans   &trans    &trans      &trans   &trans    &trans   &trans          &trans
-                            &trans   &trans    &trans      &trans   &trans    &trans
+   &kp LNLCK &kp PAUSE_BREAK &kp SLCK &kp PSCRN &kp CAPS    &kp CAPS &kp PSCRN &kp SLCK &kp PAUSE_BREAK &kp LNLCK
+   &trans    &trans          &trans   &trans    &trans      &trans   &trans    &trans   &trans          &trans
+   &trans    &trans          &trans   &trans    &trans      &trans   &trans    &trans   &trans          &trans
+                             &trans   &trans    &trans      &trans   &trans    &trans
                         >;
                 };
                 bt_layer {
