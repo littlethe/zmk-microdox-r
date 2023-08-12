@@ -13,24 +13,15 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -----------------------------------------------------------------------------------------
-// |  Q  |  W  |  E  |  R  |  T   |   |  Y  |  U   |  I  |  W  |  Q  |
-// |  A  |  S  |  D  |  F  |  G   |   |  H  |  J   |  D  |  S  |  A  |
-// |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M   |  C  |  X  |  Z  |
-//             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
                         bindings = <
-   &kp LALT SEMI &kp Y   &kp U     &kp L &kp J       &kp J     &kp L &kp U     &kp Y   &kp SEMI
+   &mt LALT SEMI &kp Y   &kp U     &kp L &kp J       &kp J     &kp L &kp U     &kp Y   &kp SEMI
    &kp O         &kp I   &kp E     &kp N &kp M       &kp M     &kp N &kp E     &kp I   &kp O
    &mt LGUI FSLH &kp DOT &kp COMMA &kp H &kp K       &kp K     &kp H &kp COMMA &kp DOT &kp FSLH
                          &kp SPACE &mo 2 &kp LSHFT   &kp LSHFT &mo 2 &kp SPACE
                         >;
                 };
+
                 num_layer {
-// -----------------------------------------------------------------------------------------
-// |BTCLR|     | ESC |  ~   |     |   | TAB | HOME |  UP  | END | DEL  |
-// | BT1 | GUI | ALT | CTRL | NUM |   |  /  | LEFT | DOWN | RGT | BKSP |
-// | BT2 |     |     |      |     |   |  \  | ENT  |      |     |      |
-//             |     |      |     |   |     |      |      |
                         bindings = <
    &kp SLASH &kp STAR  &kp MINUS  &kp PLUS &kp GRAVE    &kp GRAVE &kp PLUS &kp MINUS &kp STAR &kp SLASH
    &kp RBKT  &kp RPAR  &kp SQT    &kp LPAR &kp LBKT     &kp LBKT  &kp LPAR &kp SQT   &kp RPAR &kp RBKT
@@ -40,11 +31,6 @@
                 };
 
                 nav_layer {
-// -----------------------------------------------------------------------------------------
-// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
-// |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |
-// |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |
-//             | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp PSCRN &kp PG_UP &kp UP   &kp DEL  &kp HOME    &kp HOME &kp DEL  &kp UP   &kp PG_UP &kp PSCRN
    &kp RSHFT &kp RIGHT &kp DOWN &kp LEFT &kp END     &kp END  &kp LEFT &kp DOWN &kp RIGHT &kp RSHFT
@@ -53,14 +39,7 @@
                         >;
                 };
 
-// This layer is unreachable until "tri layer state" is sorted out.
-// Leaving it here for completeness.
                 sys_layer {
-// -----------------------------------------------------------------------------------------
-// |     |     |     |     |     |   |  A  |  7  |  8  |  9  |  D  |
-// |     |     |     |     |     |   |  B  |  4  |  5  |  6  |  E  |
-// |     |     |     |     |     |   |  C  |  1  |  2  |  3  |  F  |
-//             |     |     |     |   |  0  |  .  |     |
                         bindings = <
    &kp LNLCK &kp PAUSE_BREAK &kp SLCK &kp PSCRN &kp CAPS    &kp CAPS &kp PSCRN &kp SLCK &kp PAUSE_BREAK &kp LNLCK
    &trans    &trans          &trans   &trans    &trans      &trans   &trans    &trans   &trans          &trans
@@ -69,11 +48,6 @@
                         >;
                 };
                 bt_layer {
-// -----------------------------------------------------------------------------------------
-// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
-// |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |
-// |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |
-//             | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &bt BT_CLR   &bt BT_SEL 4 &bt BT_SEL 5 &bt BT_SEL 6 &bt BT_PRV     &trans  &trans  &trans  &trans  &trans
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_NXT     &trans  &trans  &trans  &trans  &trans
