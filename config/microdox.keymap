@@ -38,7 +38,7 @@
 
                 nav_layer {
                         bindings = <
-   &kp PSCRN &kp PG_UP &kp UP         &kp DEL  &kp HOME        &kp HOME      &kp DEL  &kp UP   &kp PG_UP &kp PSCRN
+   &kp ESC &kp PG_UP &kp UP         &kp DEL  &kp HOME        &kp HOME      &kp DEL  &kp UP   &kp PG_UP &kp PSCRN
    &kp RSHFT &kp RIGHT &kp DOWN       &kp LEFT &kp END         &kp END       &kp LEFT &kp DOWN &kp RIGHT &kp RSHFT
    &kp INS   &kp PG_DN &kp RET        &kp RBKT &kp RPAR        &kp RPAR      &kp RBKT &kp RET  &kp PG_DN &kp INS
                        &mo bt_layer   &trans   &mo sys_layer   &mo sys_layer &trans   &mo bt_layer
@@ -65,7 +65,7 @@
                         bindings = <
    &kp GRAVE &kp PLUS &kp MINUS &kp STAR &kp SLASH   &kp GRAVE &kp PLUS  &kp MINUS &kp STAR &kp SLASH
    &kp LBKT  &kp LPAR &kp SQT   &kp RPAR &kp RBKT    &kp LBKT  &kp LPAR  &kp SQT   &kp RPAR &kp RBKT
-   &trans    &trans   &trans    &kp BSLH &trans      &trans    &kp BSLH  &trans    &trans   &trans
+   &trans    &trans   &kp PSCRN &kp BSLH &trans      &trans    &kp BSLH  &kp PSCRN &trans   &trans
                       &trans    &trans   &trans      &trans    &trans    &trans
                         >;
                 };
